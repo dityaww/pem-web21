@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    padding:10;
+    margin:10;
+    font-family:sans-serif;
+    }
+    
+    body{
+        background-color:rgb(51, 51, 61);
+    }
+    
+    .form{
+        border-radius: 15px;
+        padding: 30px;
+        margin: 5% 17%;
+        background: white;
+        height: 0%;
+        box-shadow: 2px 2px 2px rgba(102, 98, 98, 0.8);
+        border: 1px;
+    }
+    .form input{
+        width: 200%;
+    }
+</style>
+<body>
+    <div class="form">    
+        <div class="title" style="font-size: 20px;">
+            <h1><center>FORM PPDB JALUR ZONASI TAHUN 2020</center></h1>
+        </div>
+        <form action="process.php" method="get">
+            <table>
+                <tr>
+                    <td><h1>Pendaftaran Online</h1></td>
+                </tr>
+                <tr>
+                    <td>1. NISN</td>
+                    <td>:</td>
+                    <td><input type="number" name="nama"style="width: 200%;"></td>
+                </tr>
+                <tr>
+                    <td>2. Asal Sekolah</td>
+                    <td>:</td>
+                    <td><input type="text" name="asal_sekolah"></td>
+                </tr>
+                <tr>
+                    <td>3. Tahun Lulus</td>
+                    <td>:</td>
+                    <td><input type="number" name="th_lulus" placeholder="lampirkan fc ijazah"></td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+                <tr>
+                    <td><h1>Info Calon Peserta</h1></td>
+                </tr>
+                <tr>
+                    <td>4. Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_lkp"></td>
+                </tr>
+                <tr>
+                    <td>5. NIK</td>
+                    <td>:</td>
+                    <td><input type="number" name="nik"></td>
+                </tr>
+                <tr>
+                    <td>6. Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="date" style="width: 80%;"></td>
+                </tr>
+                <tr>
+                    <td>7. Umur</td>
+                    <td>:</td>
+                    <td><input type="number" name="umur" placeholder="lampirkan fc akta kelahiran"></td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+                <tr>
+                    <td>8. Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" name="lk" style="width: min-content;">Laki-laki</td>
+                    <td><input type="radio" value="P" name="female" style="width: min-content;">Perempuan</td>
+                </tr>
+                <tr>
+                    <td>9. Alamat</td>
+                    <td>:</td>
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td>10. Desa/Kel.</td>
+                    <td>:</td>
+                    <td><select name="desa" style="width: 100%;">
+                        <option value="select">--Pilih Desa/Kelurahan--</option>
+                        <option value="scg">Secang</option>
+                        <option value="grb">Grabag</option>
+                        <option value="pcg">Pucang</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>11. Kecamatan</td>
+                    <td>:</td>
+                    <td><select name="kecamatan" style="width: 100%;">
+                        <option value="select">--Pilih Kecamatan--</option>
+                        <option value="mgl_u">Magelang Utara</option>
+                        <option value="mgl_t">Magelang Tengah</option>
+                        <option value="mgl_s">Magelang Selatan</option>
+                        <option value="scg">Secang</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>12. Kabupaten</td>
+                    <td>:</td>
+                    <td><select name="kabupaten" style="width: 100%;">
+                        <option value="select">--Pilih Kabupaten--</option>
+                        <option value="mgl">Kab. Magelang</option>
+                        <option value="tmg">Kab. Temanggung</option>
+                        <option value="klt">Kab. Klaten</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>13. Provinsi</td>
+                    <td>:</td>
+                    <td><select name="provinsi" style="width: 100%;">
+                        <option value="select">--Pilih Provinsi--</option>
+                        <option value="jtg">Jawa Tengah</option>
+                        <option value="jtm">Jawa Timur</option>
+                        <option value="jgj">Yogyakarta</option>
+                        <option value="jbr">Jawa Barat</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>14. Email Aktif</td>
+                    <td>:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><h1>Data Orang Tua</h1></td>
+                </tr>
+                <tr>
+                    <td>15. Nomor KK</td>
+                    <td>:</td>
+                    <td><input type="number" name="no_kk" placeholder="lampirkan fc KK"></td>
+                    <td><input type="file" name="file_kk"></td>
+                </tr>
+                <tr>
+                    <td>16. Nama Ayah Kandung</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_ayah"></td>
+                </tr>
+                <tr>
+                    <td>17. Agama</td>
+                    <td>:</td>
+                    <td><select name="agama" style="width: 100%;">
+                        <option value="select">--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="other">Lainnya</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>18. Pekerjaan</td>
+                    <td>:</td>
+                    <td><input type="text" name="job"></td>
+                </tr>
+                <tr>
+                    <td>19. Nama Ibu Kandung</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_ibu"></td>
+                </tr>
+                <tr>
+                    <td>20. Agama</td>
+                    <td>:</td>
+                    <td><select name="agama" style="width: 100%;">
+                        <option value="select">--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="other">Lainnya</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>21. Pekerjaan</td>
+                    <td>:</td>
+                    <td><input type="text" name="job"></td>
+                </tr>
+                <tr>
+                    <td>22. Alamat Orang Tua</td>
+                    <td>:</td>
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td>23. Desa/Kel.</td>
+                    <td>:</td>
+                    <td><select name="desa" style="width: 100%;">
+                        <option value="select">--Pilih Desa/Kelurahan--</option>
+                        <option value="scg">Secang</option>
+                        <option value="grb">Grabag</option>
+                        <option value="pcg">Pucang</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>24. Kecamatan</td>
+                    <td>:</td>
+                    <td><select name="kecamatan" style="width: 100%;">
+                        <option value="select">--Pilih Kecamatan--</option>
+                        <option value="mgl_u">Magelang Utara</option>
+                        <option value="mgl_t">Magelang Tengah</option>
+                        <option value="mgl_s">Magelang Selatan</option>
+                        <option value="scg">Secang</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>25. Kabupaten</td>
+                    <td>:</td>
+                    <td><select name="kabupaten" style="width: 100%;">
+                        <option value="select">--Pilih Kabupaten--</option>
+                        <option value="mgl">Kab. Magelang</option>
+                        <option value="tmg">Kab. Temanggung</option>
+                        <option value="klt">Kab. Klaten</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>26. Provinsi</td>
+                    <td>:</td>
+                    <td><select name="provinsi" style="width: 100%;">
+                        <option value="select">--Pilih Provinsi--</option>
+                        <option value="jtg">Jawa Tengah</option>
+                        <option value="jtm">Jawa Timur</option>
+                        <option value="jgj">Yogyakarta</option>
+                        <option value="jbr">Jawa Barat</option>
+                    </select></td>
+                </tr>
+            </table><br>
+            <input type="submit" value="Submit" style="width: 15%; background-color: #4CAF50; color: white; font-weight: bold;">
+            <input type="reset" value="Reset" style="width: 15%; background-color: #f44336; color: white; font-weight: bold;">
+        </form>
+    </div>
+</body>
+</html>
