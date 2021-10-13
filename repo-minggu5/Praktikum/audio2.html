@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+    header{
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+    }
+    nav h1,a{
+        color: #d4d4d4;
+    }
+    h1{
+        margin-right: 55px;
+        font-family: sans-serif;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        padding-left: 30px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    li a:hover{
+        color: #b3d3f6;
+    }
+    section{
+        font-size: 16px;
+        font-family: sans-serif;
+        line-height: normal;
+    }
+    hr{
+        border: 0;
+        height: 2px;
+        background-color: #ccc;
+    }
+    .audio{
+        padding-top: 5px;
+    }
+    footer{
+        background-color: #222;
+        text-align: center;
+        color: #d4d4d4;
+        padding: 3px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><h1>Belajar HTML</h1></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <article style="padding: 20px; margin-left: 10px;">
+        <section>
+            <h1>Tutorial Elemen Semantik untuk Pemula</h1>
+            <p>Semantik Elemen adalah elemen yang memiliki makna dan tujuan. Tujuannya adalah agar kode HTML
+        mudah dibaca dan tidak ada penyalahgunaan tag. Elemen Sematik bagus untuk SEO dan juga dapat meningkatkan accessibility</p>
+        </section><br><hr>
+        <section class="audio">
+            <h1>Contoh Audio</h1>
+            <audio controls autoplay loop>
+                <source src="../audio/Pingal.mp3" type="audio/mp3">
+            </audio>
+        </section><br><hr>
+    </article>
+
+    <footer>
+        <p>Copyright &copy; 2021 by <b>Aditya Widyatmoko</b></p>
+    </footer>
+</body>
+</html>
