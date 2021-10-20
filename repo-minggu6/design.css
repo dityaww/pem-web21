@@ -1,0 +1,478 @@
+*{
+    box-sizing: border-box;
+}
+
+/* import font */
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script:regular,700);;
+@import url(https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed:regular,italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Contrail+One:regular);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---START NAVBAR--- */
+/* text title (Portfolio) */
+.txt_title{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 90px;
+    top: 20px;
+
+    font-family: Asap Condensed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 0px;
+
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+/* layout tombol navigasi */
+.navigation{
+    position: absolute;
+    width: 662px;
+    height: 42px;
+    left: 800px;
+    top: 50px;
+}
+
+/* design garis (home navigation) */
+.navigation hr{
+    position: absolute;
+    left: 5%;
+    right: 90%;
+    top: 90%;
+    bottom: 10%;
+    margin-top: 13px;
+    width: 7%;
+    border-radius: 10%;
+    background: #F30A0A;
+    mix-blend-mode: darken;
+    border: 1px solid #F30A0A;
+}
+
+/* tombol navigasi */
+.nav_start{
+    position: absolute;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0px;
+    /* identical to box height */
+    letter-spacing: 0.15em;
+
+    color: #000000;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* list */
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+/* link navigasi design */
+a{
+    text-decoration: none;
+    margin: 15px;
+    color: #333333;
+}
+
+/* link hover */
+a:hover{
+    color: #3f51b5;
+}
+/* ---END NAVBAR--- */
+
+
+/* ---START PROFILE--- */
+/* group image */
+.group_img{
+    position: absolute;
+    width: 369px;
+    height: 367px;
+    left: 150px;
+    top: 100px;
+}
+
+/* style image */
+.group_img img{
+    position: absolute;
+    left: 19%;
+    right: 56%;
+    top: 15%;
+    bottom: 50%;
+    width: 335px;
+    height: 338px;
+
+    mix-blend-mode: normal;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/* group text */
+.group_txt{
+    position: absolute;
+    width: 541px;
+    height: 200px;
+    left: 420px;
+    top: 120px;
+}
+
+/* style text1 */
+.namadepan{
+    position: absolute;
+    left: 50%;
+    right: 30%;
+    top: 0%;
+
+    font-family: Oleo Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.02em;
+    z-index: 1;
+    color: #000000;
+}
+
+/* style text2 */
+.namabelakang{
+    position: absolute;
+    left: 50%;
+    right: 12%;
+    top: 50%;
+
+    font-family: Oleo Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 135px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+/* style sub_text1 */
+.group_txt p{
+    position: absolute;
+    left: 55%;
+    right: 50%;
+    top: 50%;
+    width: 100%;
+
+    font-family: Contrail One;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 370px;
+    letter-spacing: 0.15em;
+
+    color: #828282;
+}
+
+/* style shape text */
+.shape{
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    left: 310px;
+    top: 100px;
+
+    /* Yellow */
+    background: #F2C94C;
+    opacity: 0.8;
+    border-radius: 5px;
+    z-index: inherit;
+}
+/* ---END PROFILE--- */
+
+/* ---START CONTENT--- */
+.layout{    
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    left: 0;
+    top: 650px;
+
+    background: #222;
+}
+
+article h2{
+    position: absolute;
+    height: 56px;
+    left: 600px;
+    top: -30px;
+    font-family: Contrail One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    color: #f1f1f1;
+}
+
+article p{
+    position: absolute;
+    color: #e0e0e0;
+    font-family: Contrail One;
+    font-size: 20px;
+    line-height: 200px;
+    left: 400px;
+}
+
+article hr{    
+    position: absolute;
+    width: 90px;
+    left: 650px;
+    top: 65px;
+    background: #F30A0A;
+    border-radius: 9%;
+    border: 1px solid #F30A0A;
+}
+
+.table{
+    position: absolute;
+    left: 450px;
+    top: 150px;
+    width: 40%;
+    margin: 3em auto;
+    color: #e0e0e0;
+    border: 1px solid #222;
+    border-collapse: collapse;
+    font-family: Contrail One;
+}
+
+.table thead th{
+    background-color: #3b50ce;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.table tbody tr:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody td{
+    border-bottom: 1px solid #e0e0e0;
+    text-indent: 30px;
+}
+/* ---END CONTENT--- */
+
+/* ---START FOOTER--- */
+.footer_layout{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 1200px;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd;
+    font-family: Contrail One;
+}
+
+footer p{   
+    text-align: center;
+    color: #222;
+}
+/* ---END FOOTER--- */
+
+
+
+/* ///////////////////////////////////////////////////////////////// */
+/* CONTACT.HTML */
+
+/* --Start Content-- */
+
+/* contact-form layout */
+.contact-form{
+    font-family: Comic Neue;
+    text-align: left;
+    margin: 10%;
+    padding: 5%;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 1px 7px #828282;
+}
+
+/* title h1*/
+.contact-form h1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* form */
+.contact-form form{
+    position: relative;
+    margin-top: 2%;
+}
+
+/* form e-mail */
+.contact-form .email{
+    font-size: 20px;
+}
+
+/* form pesan/message */
+.contact-form .msg{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* input e-mail */
+.email input{
+    margin-top: 10px;
+    border: 1px solid#eeeeee;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline-color: #222;
+    padding: 10px;
+    width: 70%;
+}
+
+/* input pesan/message */
+.msg textarea{
+    margin-top: 10px;
+    border:1px solid #eeeeee;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline-color: #222;
+    padding: 10px;
+    width: 70%;
+}
+
+/* button submit */
+.contact-form .btn .submit{
+    color: #333333;
+    font-family: Comic Neue;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    width: 7%;
+    background-color: #6fcf97;
+}
+
+/* hover button submit */
+.btn .submit:hover{
+    filter: brightness(90%);
+}
+
+/* button reset */
+.contact-form .btn .reset{
+    color: #333333;
+    font-weight: bold;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 7%;
+    background-color: #eb5757;
+    font-family: Comic Neue;
+}
+
+/* hover button reset */
+.btn .reset:hover{
+    filter: brightness(90%);
+}
+
+/* --End Content-- */
+
+/* Start footer {contact.html} */
+/* footer */
+.footer_contact{
+    background-color: #bdbdbd;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    top: 110%;
+    width: 100%;
+    font-family: Contrail One;
+}
+/* --End Footer-- */
+
+/* ////////////////////////////////////////////// */
+
+/* TENTANG.HTML */
+.content-about h1{
+    position: absolute;
+    width: 345px;
+    height: 80px;
+    left: 144px;
+    top: 80px;
+
+    font-family: Contrail One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.content-about hr{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 182px;
+    top: 200px;
+
+    background: #EB5757;
+    border: 2px solid #EB5757;
+    transform: rotate(-0.02deg);
+}
+
+.content-about .group-text p{
+    position: relative;
+    width: 774px;
+    height: 30px;
+    left: 144px;
+    top: 245px;
+    margin: 0;
+    line-height: 5px;
+    color: #333333;
+}
+
+.content-about .video p{
+    position: absolute;
+    width: 733px;
+    height: 447px;
+    left: 144px;
+    top: 340px;
+}
+
+.footer-about{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 770px;
+    bottom: 0;
+    left: 0;
+    background-color: #bdbdbd;
+    font-family: Contrail One;
+}
+
+
